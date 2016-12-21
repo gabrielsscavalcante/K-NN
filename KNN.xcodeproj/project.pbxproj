@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08318D8B1E0AE9C100702C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318D8A1E0AE9C100702C14 /* AppDelegate.swift */; };
+		08318D8D1E0AE9C100702C14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318D8C1E0AE9C100702C14 /* ViewController.swift */; };
+		08318D901E0AE9C100702C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08318D8E1E0AE9C100702C14 /* Main.storyboard */; };
+		08318D931E0AE9C100702C14 /* KNN.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08318D911E0AE9C100702C14 /* KNN.xcdatamodeld */; };
+		08318D951E0AE9C100702C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08318D941E0AE9C100702C14 /* Assets.xcassets */; };
+		08318D981E0AE9C100702C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08318D961E0AE9C100702C14 /* LaunchScreen.storyboard */; };
+		08318DA31E0AE9C100702C14 /* KNNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DA21E0AE9C100702C14 /* KNNTests.swift */; };
+		08318DAE1E0AE9C100702C14 /* KNNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DAD1E0AE9C100702C14 /* KNNUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08318D9F1E0AE9C100702C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08318D7F1E0AE9C000702C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08318D861E0AE9C000702C14;
+			remoteInfo = KNN;
+		};
+		08318DAA1E0AE9C100702C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08318D7F1E0AE9C000702C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08318D861E0AE9C000702C14;
+			remoteInfo = KNN;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08318D871E0AE9C100702C14 /* KNN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08318D8A1E0AE9C100702C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08318D8C1E0AE9C100702C14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08318D8F1E0AE9C100702C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08318D921E0AE9C100702C14 /* KNN.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KNN.xcdatamodel; sourceTree = "<group>"; };
+		08318D941E0AE9C100702C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08318D971E0AE9C100702C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08318D991E0AE9C100702C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08318D9E1E0AE9C100702C14 /* KNNTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNNTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08318DA21E0AE9C100702C14 /* KNNTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNNTests.swift; sourceTree = "<group>"; };
+		08318DA41E0AE9C100702C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08318DA91E0AE9C100702C14 /* KNNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08318DAD1E0AE9C100702C14 /* KNNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNNUITests.swift; sourceTree = "<group>"; };
+		08318DAF1E0AE9C100702C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08318D841E0AE9C000702C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08318D9B1E0AE9C100702C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08318DA61E0AE9C100702C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08318D7E1E0AE9C000702C14 = {
+			isa = PBXGroup;
+			children = (
+				08318D891E0AE9C100702C14 /* KNN */,
+				08318DA11E0AE9C100702C14 /* KNNTests */,
+				08318DAC1E0AE9C100702C14 /* KNNUITests */,
+				08318D881E0AE9C100702C14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08318D881E0AE9C100702C14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08318D871E0AE9C100702C14 /* KNN.app */,
+				08318D9E1E0AE9C100702C14 /* KNNTests.xctest */,
+				08318DA91E0AE9C100702C14 /* KNNUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08318D891E0AE9C100702C14 /* KNN */ = {
+			isa = PBXGroup;
+			children = (
+				08318D8A1E0AE9C100702C14 /* AppDelegate.swift */,
+				08318D8C1E0AE9C100702C14 /* ViewController.swift */,
+				08318D8E1E0AE9C100702C14 /* Main.storyboard */,
+				08318D941E0AE9C100702C14 /* Assets.xcassets */,
+				08318D961E0AE9C100702C14 /* LaunchScreen.storyboard */,
+				08318D991E0AE9C100702C14 /* Info.plist */,
+				08318D911E0AE9C100702C14 /* KNN.xcdatamodeld */,
+			);
+			path = KNN;
+			sourceTree = "<group>";
+		};
+		08318DA11E0AE9C100702C14 /* KNNTests */ = {
+			isa = PBXGroup;
+			children = (
+				08318DA21E0AE9C100702C14 /* KNNTests.swift */,
+				08318DA41E0AE9C100702C14 /* Info.plist */,
+			);
+			path = KNNTests;
+			sourceTree = "<group>";
+		};
+		08318DAC1E0AE9C100702C14 /* KNNUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08318DAD1E0AE9C100702C14 /* KNNUITests.swift */,
+				08318DAF1E0AE9C100702C14 /* Info.plist */,
+			);
+			path = KNNUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08318D861E0AE9C000702C14 /* KNN */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08318DB21E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNN" */;
+			buildPhases = (
+				08318D831E0AE9C000702C14 /* Sources */,
+				08318D841E0AE9C000702C14 /* Frameworks */,
+				08318D851E0AE9C000702C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KNN;
+			productName = KNN;
+			productReference = 08318D871E0AE9C100702C14 /* KNN.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08318D9D1E0AE9C100702C14 /* KNNTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08318DB51E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNNTests" */;
+			buildPhases = (
+				08318D9A1E0AE9C100702C14 /* Sources */,
+				08318D9B1E0AE9C100702C14 /* Frameworks */,
+				08318D9C1E0AE9C100702C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08318DA01E0AE9C100702C14 /* PBXTargetDependency */,
+			);
+			name = KNNTests;
+			productName = KNNTests;
+			productReference = 08318D9E1E0AE9C100702C14 /* KNNTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08318DA81E0AE9C100702C14 /* KNNUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08318DB81E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNNUITests" */;
+			buildPhases = (
+				08318DA51E0AE9C100702C14 /* Sources */,
+				08318DA61E0AE9C100702C14 /* Frameworks */,
+				08318DA71E0AE9C100702C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08318DAB1E0AE9C100702C14 /* PBXTargetDependency */,
+			);
+			name = KNNUITests;
+			productName = KNNUITests;
+			productReference = 08318DA91E0AE9C100702C14 /* KNNUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08318D7F1E0AE9C000702C14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Gabriel Cavalcante";
+				TargetAttributes = {
+					08318D861E0AE9C000702C14 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YY4FY5E467;
+						ProvisioningStyle = Automatic;
+					};
+					08318D9D1E0AE9C100702C14 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YY4FY5E467;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08318D861E0AE9C000702C14;
+					};
+					08318DA81E0AE9C100702C14 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YY4FY5E467;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08318D861E0AE9C000702C14;
+					};
+				};
+			};
+			buildConfigurationList = 08318D821E0AE9C000702C14 /* Build configuration list for PBXProject "KNN" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08318D7E1E0AE9C000702C14;
+			productRefGroup = 08318D881E0AE9C100702C14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08318D861E0AE9C000702C14 /* KNN */,
+				08318D9D1E0AE9C100702C14 /* KNNTests */,
+				08318DA81E0AE9C100702C14 /* KNNUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08318D851E0AE9C000702C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08318D981E0AE9C100702C14 /* LaunchScreen.storyboard in Resources */,
+				08318D951E0AE9C100702C14 /* Assets.xcassets in Resources */,
+				08318D901E0AE9C100702C14 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08318D9C1E0AE9C100702C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08318DA71E0AE9C100702C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08318D831E0AE9C000702C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08318D8D1E0AE9C100702C14 /* ViewController.swift in Sources */,
+				08318D931E0AE9C100702C14 /* KNN.xcdatamodeld in Sources */,
+				08318D8B1E0AE9C100702C14 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08318D9A1E0AE9C100702C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08318DA31E0AE9C100702C14 /* KNNTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08318DA51E0AE9C100702C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08318DAE1E0AE9C100702C14 /* KNNUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08318DA01E0AE9C100702C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08318D861E0AE9C000702C14 /* KNN */;
+			targetProxy = 08318D9F1E0AE9C100702C14 /* PBXContainerItemProxy */;
+		};
+		08318DAB1E0AE9C100702C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08318D861E0AE9C000702C14 /* KNN */;
+			targetProxy = 08318DAA1E0AE9C100702C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08318D8E1E0AE9C100702C14 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08318D8F1E0AE9C100702C14 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08318D961E0AE9C100702C14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08318D971E0AE9C100702C14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08318DB01E0AE9C100702C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08318DB11E0AE9C100702C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08318DB31E0AE9C100702C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YY4FY5E467;
+				INFOPLIST_FILE = KNN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		08318DB41E0AE9C100702C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YY4FY5E467;
+				INFOPLIST_FILE = KNN/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNN;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		08318DB61E0AE9C100702C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YY4FY5E467;
+				INFOPLIST_FILE = KNNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KNN.app/KNN";
+			};
+			name = Debug;
+		};
+		08318DB71E0AE9C100702C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YY4FY5E467;
+				INFOPLIST_FILE = KNNTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNNTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KNN.app/KNN";
+			};
+			name = Release;
+		};
+		08318DB91E0AE9C100702C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YY4FY5E467;
+				INFOPLIST_FILE = KNNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KNN;
+			};
+			name = Debug;
+		};
+		08318DBA1E0AE9C100702C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YY4FY5E467;
+				INFOPLIST_FILE = KNNUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNNUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = KNN;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08318D821E0AE9C000702C14 /* Build configuration list for PBXProject "KNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08318DB01E0AE9C100702C14 /* Debug */,
+				08318DB11E0AE9C100702C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08318DB21E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNN" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08318DB31E0AE9C100702C14 /* Debug */,
+				08318DB41E0AE9C100702C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08318DB51E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNNTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08318DB61E0AE9C100702C14 /* Debug */,
+				08318DB71E0AE9C100702C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08318DB81E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNNUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08318DB91E0AE9C100702C14 /* Debug */,
+				08318DBA1E0AE9C100702C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08318D911E0AE9C100702C14 /* KNN.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08318D921E0AE9C100702C14 /* KNN.xcdatamodel */,
+			);
+			currentVersion = 08318D921E0AE9C100702C14 /* KNN.xcdatamodel */;
+			path = KNN.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 08318D7F1E0AE9C000702C14 /* Project object */;
+}
