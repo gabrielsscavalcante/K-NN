@@ -15,6 +15,13 @@
 		08318D981E0AE9C100702C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08318D961E0AE9C100702C14 /* LaunchScreen.storyboard */; };
 		08318DA31E0AE9C100702C14 /* KNNTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DA21E0AE9C100702C14 /* KNNTests.swift */; };
 		08318DAE1E0AE9C100702C14 /* KNNUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DAD1E0AE9C100702C14 /* KNNUITests.swift */; };
+		08318DBD1E0AE9E700702C14 /* Iris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DBC1E0AE9E700702C14 /* Iris.swift */; };
+		08318DC11E0AECAD00702C14 /* DataIris.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DC01E0AECAD00702C14 /* DataIris.swift */; };
+		08318DC51E0AF80000702C14 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DC41E0AF80000702C14 /* Distance.swift */; };
+		08318DC71E0B069400702C14 /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DC61E0B069400702C14 /* ExtensionArray.swift */; };
+		08318DC91E0B0F9A00702C14 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DC81E0B0F9A00702C14 /* Classification.swift */; };
+		0852112A1E0B5D6100DC6ED2 /* IrisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085211291E0B5D6100DC6ED2 /* IrisTableViewCell.swift */; };
+		0852112C1E0B7D5D00DC6ED2 /* ExtensionDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0852112B1E0B7D5D00DC6ED2 /* ExtensionDouble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		08318DA91E0AE9C100702C14 /* KNNUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KNNUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08318DAD1E0AE9C100702C14 /* KNNUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNNUITests.swift; sourceTree = "<group>"; };
 		08318DAF1E0AE9C100702C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08318DBC1E0AE9E700702C14 /* Iris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Iris.swift; sourceTree = "<group>"; };
+		08318DC01E0AECAD00702C14 /* DataIris.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataIris.swift; sourceTree = "<group>"; };
+		08318DC41E0AF80000702C14 /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		08318DC61E0B069400702C14 /* ExtensionArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionArray.swift; sourceTree = "<group>"; };
+		08318DC81E0B0F9A00702C14 /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		085211291E0B5D6100DC6ED2 /* IrisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrisTableViewCell.swift; sourceTree = "<group>"; };
+		0852112B1E0B7D5D00DC6ED2 /* ExtensionDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDouble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +113,11 @@
 		08318D891E0AE9C100702C14 /* KNN */ = {
 			isa = PBXGroup;
 			children = (
+				08318DBB1E0AE9CB00702C14 /* Model */,
+				08318DBE1E0AEB0D00702C14 /* View */,
+				08318DBF1E0AEB1400702C14 /* Controller */,
 				08318D8A1E0AE9C100702C14 /* AppDelegate.swift */,
-				08318D8C1E0AE9C100702C14 /* ViewController.swift */,
-				08318D8E1E0AE9C100702C14 /* Main.storyboard */,
 				08318D941E0AE9C100702C14 /* Assets.xcassets */,
-				08318D961E0AE9C100702C14 /* LaunchScreen.storyboard */,
 				08318D991E0AE9C100702C14 /* Info.plist */,
 				08318D911E0AE9C100702C14 /* KNN.xcdatamodeld */,
 			);
@@ -126,6 +140,45 @@
 				08318DAF1E0AE9C100702C14 /* Info.plist */,
 			);
 			path = KNNUITests;
+			sourceTree = "<group>";
+		};
+		08318DBB1E0AE9CB00702C14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08318DBC1E0AE9E700702C14 /* Iris.swift */,
+				08318DC01E0AECAD00702C14 /* DataIris.swift */,
+				08318DC81E0B0F9A00702C14 /* Classification.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		08318DBE1E0AEB0D00702C14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				085211281E0B439000DC6ED2 /* Storyboard */,
+				085211291E0B5D6100DC6ED2 /* IrisTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		08318DBF1E0AEB1400702C14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08318D8C1E0AE9C100702C14 /* ViewController.swift */,
+				08318DC41E0AF80000702C14 /* Distance.swift */,
+				08318DC61E0B069400702C14 /* ExtensionArray.swift */,
+				0852112B1E0B7D5D00DC6ED2 /* ExtensionDouble.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		085211281E0B439000DC6ED2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				08318D961E0AE9C100702C14 /* LaunchScreen.storyboard */,
+				08318D8E1E0AE9C100702C14 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08318DC51E0AF80000702C14 /* Distance.swift in Sources */,
+				08318DBD1E0AE9E700702C14 /* Iris.swift in Sources */,
+				0852112C1E0B7D5D00DC6ED2 /* ExtensionDouble.swift in Sources */,
+				08318DC11E0AECAD00702C14 /* DataIris.swift in Sources */,
+				0852112A1E0B5D6100DC6ED2 /* IrisTableViewCell.swift in Sources */,
+				08318DC91E0B0F9A00702C14 /* Classification.swift in Sources */,
 				08318D8D1E0AE9C100702C14 /* ViewController.swift in Sources */,
 				08318D931E0AE9C100702C14 /* KNN.xcdatamodeld in Sources */,
+				08318DC71E0B069400702C14 /* ExtensionArray.swift in Sources */,
 				08318D8B1E0AE9C100702C14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +485,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -438,6 +499,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielcavalcante.KNN;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -518,6 +580,7 @@
 				08318DB41E0AE9C100702C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08318DB51E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNNTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +589,7 @@
 				08318DB71E0AE9C100702C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08318DB81E0AE9C100702C14 /* Build configuration list for PBXNativeTarget "KNNUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +598,7 @@
 				08318DBA1E0AE9C100702C14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

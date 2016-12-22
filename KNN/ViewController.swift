@@ -8,18 +8,142 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+struct IrisModal {
+    var total = 0
+    var type = ""
+}
 
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    var dataIris = DataIris()
+    var iris = [Iris]()
+    let distance = Distance()
+    var corrects = [Iris]()
+    var percent = [Double]()
+    
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var labelResult: UILabel!
+    @IBOutlet weak var kNumber: UITextField!
+    @IBOutlet weak var resultPadrao: UILabel!
+    @IBOutlet weak var button: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        kNumber.delegate = self
+        button.layer.cornerRadius = 5
+        
+        //Pegando objetos Iris a partir dos dados
+        iris = dataIris.getArrayOfIris()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return corrects.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! IrisTableViewCell
+        
+        let iris = corrects[indexPath.row]
+        
+        cell.initIris(iris: iris)
+        
+        return cell
+    }
+    
+    @IBAction func calculate() {
+        
+        //Pegando 100 para treinamento
+        let trainingIris = getRandomIris(allIris: iris)
+        
+        //Pegando o restante para teste
+        let testIris = getLeftoversIris(randomIris: trainingIris, allIris: iris)
+        
+        percent.removeAll()
+        
+        if let number = kNumber.text {
+            
+            //Escolhendo 10 testes para calcular a distancia para todos as Iris de treinamento
+            for iris in testIris.choose(10) {
+                corrects.removeAll()
+                
+                //Recebendo as classicações de cada Iris em relacão a distancia, de forma ordenada.
+                let classifications = distance.distanceFromRandom(randomIris: trainingIris, iris: iris)
+                
+                //Verificando o total de acertos a partir do número de vizinhos selecionado
+                checkCorrectType(iris: iris, classifications: classifications, total: Int(number)!)
+                
+                //Colocando a média de acerto na memoria para depois realizar o somatorio
+                percent.append(media(corrects: corrects))
+            }
+            
+            //Resultado da média total de acertos
+            labelResult.text = "Média de Acertos: \(percent.average)"
+            
+            //Recebendo a variancia para o desvio padrão a partir do numero de medias
+            let varienceResult = variance(media: percent.average, percent: percent)
+            resultPadrao.text = "Desvio Padrão: \(varienceResult.squareRoot().roundTo(places: 2))"
+            
+            tableView.reloadData()
+        }
+    }
+    
+    
+    //Calculando variancia
+    func variance(media: Double, percent: [Double]) -> Double {
+        var numbersVariance = [Double]()
+        for num in percent {
+            let difference = num - media
+            numbersVariance.append(pow(difference, 2.0))
+        }
+        
+        return numbersVariance.average
+    }
+    
+    //Calculando média
+    func media(corrects: [Iris]) -> Double{
+        let media = Double(corrects.count)/Double(Int(kNumber.text!)!)
+        return media
+    }
+    
+    //Verificando as Iris corretas em relacão aos k vizinhos
+    func checkCorrectType(iris: Iris, classifications: [Classification], total: Int) {
+        for i in 0..<total {
+            if classifications[i].iris.type == iris.type {
+                corrects.append(classifications[i].iris)
+            }
+        }
+    }
+    
+    //Selecionando 100 aleatoriamente
+    func getRandomIris(allIris: [Iris]) -> [Iris] {
+        return iris.shuffle().choose(100)
+    }
+    
+    //Selecionando restante de Iris
+    func getLeftoversIris(randomIris: [Iris], allIris: [Iris]) -> [Iris] {
+        var leftIris = [Iris]()
+        for iris in allIris {
+            if !(randomIris.contains(iris)) {
+                leftIris.append(iris)
+            }
+        }
+        
+        return leftIris
+    }
 }
 
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
