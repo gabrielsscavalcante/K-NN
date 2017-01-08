@@ -115,7 +115,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //Selecionando 100 aleatoriamente
+    //Selecionando 120 aleatoriamente
     func getRandomIris(allIris: [Iris]) -> [Iris] {
         return iris.shuffle().choose(120)
     }

@@ -88,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08069CF81E229CF700CDA151 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				08318DC61E0B069400702C14 /* ExtensionArray.swift */,
+				0852112B1E0B7D5D00DC6ED2 /* ExtensionDouble.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
 		08318D7E1E0AE9C000702C14 = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +120,7 @@
 		08318D891E0AE9C100702C14 /* KNN */ = {
 			isa = PBXGroup;
 			children = (
+				08069CF81E229CF700CDA151 /* Extension */,
 				08318DBB1E0AE9CB00702C14 /* Model */,
 				08318DBE1E0AEB0D00702C14 /* View */,
 				08318DBF1E0AEB1400702C14 /* Controller */,
@@ -163,8 +173,6 @@
 			children = (
 				08318D8C1E0AE9C100702C14 /* ViewController.swift */,
 				08318DC41E0AF80000702C14 /* Distance.swift */,
-				08318DC61E0B069400702C14 /* ExtensionArray.swift */,
-				0852112B1E0B7D5D00DC6ED2 /* ExtensionDouble.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
