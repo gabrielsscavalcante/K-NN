@@ -20,7 +20,6 @@
 		08318DC51E0AF80000702C14 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DC41E0AF80000702C14 /* Distance.swift */; };
 		08318DC71E0B069400702C14 /* ExtensionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DC61E0B069400702C14 /* ExtensionArray.swift */; };
 		08318DC91E0B0F9A00702C14 /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08318DC81E0B0F9A00702C14 /* Classification.swift */; };
-		0852112A1E0B5D6100DC6ED2 /* IrisTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 085211291E0B5D6100DC6ED2 /* IrisTableViewCell.swift */; };
 		0852112C1E0B7D5D00DC6ED2 /* ExtensionDouble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0852112B1E0B7D5D00DC6ED2 /* ExtensionDouble.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +60,6 @@
 		08318DC41E0AF80000702C14 /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		08318DC61E0B069400702C14 /* ExtensionArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionArray.swift; sourceTree = "<group>"; };
 		08318DC81E0B0F9A00702C14 /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
-		085211291E0B5D6100DC6ED2 /* IrisTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrisTableViewCell.swift; sourceTree = "<group>"; };
 		0852112B1E0B7D5D00DC6ED2 /* ExtensionDouble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDouble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				085211281E0B439000DC6ED2 /* Storyboard */,
-				085211291E0B5D6100DC6ED2 /* IrisTableViewCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -322,7 +319,6 @@
 				08318DBD1E0AE9E700702C14 /* Iris.swift in Sources */,
 				0852112C1E0B7D5D00DC6ED2 /* ExtensionDouble.swift in Sources */,
 				08318DC11E0AECAD00702C14 /* DataIris.swift in Sources */,
-				0852112A1E0B5D6100DC6ED2 /* IrisTableViewCell.swift in Sources */,
 				08318DC91E0B0F9A00702C14 /* Classification.swift in Sources */,
 				08318D8D1E0AE9C100702C14 /* ViewController.swift in Sources */,
 				08318D931E0AE9C100702C14 /* KNN.xcdatamodeld in Sources */,
